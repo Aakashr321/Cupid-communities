@@ -1,0 +1,726 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", "Monsterrat";
+}
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%; /* To make 1rem = 10px i've used font size 62.5% which can be calculated by dividing (100/16*10) = 62.5*/
+  font-family: "Gilroy";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Gilroy-Bold";
+}
+
+/* Styles for header section  */
+.homepage__header {
+  background-color: #213049;
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar-float {
+  justify-content: end;
+}
+
+.homepage__header .btnDownload {
+  background: #f53838;
+  border-radius: 0.8rem;
+  padding: 1.6rem 3.4rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border: none;
+}
+
+.homepage__header .btnDownload:hover,
+.homepage__header .btnDownload:focus {
+  box-shadow: none;
+  border: none;
+}
+
+/* styles for  search section*/
+
+.mainSection {
+  background-color: #1d2c45;
+  min-height: 7.2rem;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5.5rem 0 10rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainSection__heading {
+  word-wrap: break-word;
+  font-weight: 800;
+  font-size: 6.8rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+.mainSection__para {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-align: left;
+}
+
+.mainSection__goTo {
+  display: flex;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+.mainSection__goTo a {
+  text-align: left;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.mainSection__goTo-googlePlayButton {
+  display: flex;
+  width: 22.6rem;
+  height: 6.5rem;
+}
+
+.mainSection__goTo-googlePlayButton .playImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainSection__goTo-googlePlayButton p {
+  font-weight: 500;
+  text-align: center;
+}
+
+/* For search div in the main section  */
+.mainSection__Search {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  top: -8rem;
+  background-color: #fff;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 2.4rem 3.4rem;
+  box-shadow: 0px 2rem 10rem rgba(29, 44, 69, 0.08);
+  border-radius: 1rem;
+}
+
+.mainSection__Search form {
+  background-color: #f4f4f4;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.mainSection__Search form select {
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  width: 100%;
+  text-align: center;
+}
+.formSearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formSearch div {
+  margin-left: 2rem;
+}
+
+.btnBegin,
+.btnBegin:hover {
+  padding: 1.8rem 6.4rem;
+  background-color: #f53838;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #ffffff;
+  border: none;
+  border: none;
+  float: right;
+}
+
+/*Section for the bridal data  */
+
+.bridalData {
+  padding: 3rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.bridalData__content {
+  opacity: 0.3;
+}
+
+.owl-carousel1 {
+  overflow: hidden;
+}
+
+.carouselUpperDiv {
+  padding: 3rem;
+  text-align: center;
+}
+
+.carouselDivContent {
+  padding: 1rem 1rem;
+  text-align: left;
+}
+
+.bridalData .bridalData__head {
+  padding-top: 10rem;
+  position: relative;
+}
+
+.bridalData .bridalData__head .arrowImage {
+  position: absolute;
+  top: 6rem;
+  right: 8rem;
+  height: 90%;
+}
+
+.bridalData__head h2 {
+  font-weight: 700;
+  font-size: 5.4rem;
+  color: #222222;
+  line-height: 120%;
+}
+.bridalData__head p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 140%;
+  color: #8a8a8a;
+  word-wrap: break-word;
+  word-break: break-word;
+
+  margin: 0 auto;
+}
+
+.responsiveHeading {
+  width: 72rem;
+}
+
+.bridalData__head .heading-bold {
+  color: #000;
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: "Gilroy-bold";
+}
+
+.bridalData__head .heading-bold span {
+  color: #f53838;
+}
+
+.btnAppDownload,
+.btnAppDownload:hover {
+  padding: 1.5rem 6.5rem;
+  background-color: #f53838;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #ffffff;
+  border: none;
+}
+
+.your-soulmate-sec {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.premium-offer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.premium-offer .padding-inner {
+  padding: 3.5rem;
+}
+
+.trusted-sec {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.premium-offer .btnDownload1 {
+  background: #f53838;
+  border-radius: 0.8rem;
+  padding: 2rem 3.4rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border: none;
+}
+
+.soulmate-sec {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: #ffcc00;
+}
+
+.boidata-sec {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.register-sec {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.register-sec .register-form {
+  background: #ffffff;
+  box-shadow: 0px 7rem 10rem rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 3rem;
+}
+
+.register-sec .register-form .register-head {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #222222;
+}
+
+.register-sec .register-form .form-control {
+  background: rgba(34, 34, 34, 0.05);
+  border-radius: 8px;
+  padding: 12px 47px 12px 12px;
+  border: none;
+  height: 49px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.btn-submit,
+.btn-submit:hover {
+  background: #f53838;
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+}
+
+/* Styles for footer section  */
+
+footer {
+  background-color: #1d2c45;
+
+  position: relative;
+}
+
+.footer__goTo {
+  display: flex;
+}
+
+.social-icons {
+  float: right;
+}
+.social-icons .anchr-icon {
+  color: #1d2c45;
+  font-size: 1.6rem;
+  background-color: #f0f5fe;
+  height: 3.2rem;
+  width: 3.2rem;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0.3rem;
+  text-align: center;
+  margin: 0.6rem;
+  cursor: pointer;
+}
+
+.footer__copyright p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #afb5c0;
+}
+
+.footer__image img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.ul__extra {
+  column-count: 2;
+  column-gap: 1rem;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+.footer__list li {
+  padding: 0.3rem 0;
+}
+
+.footer__links {
+  padding: 1.2rem 0rem;
+}
+.footer__moreDetails {
+  padding: 5rem 0;
+}
+
+.moreDetails__head {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.footer__list li a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.footer__address {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #ffffff;
+  padding-top: 0.5rem;
+}
+.footer__mobileNo {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+.footer__support h5 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+/* CSS for trusted section carousel */
+
+.owl-carousel {
+  margin-bottom: 0rem !important;
+  margin-top: 0rem;
+}
+.owl-carousel .box {
+  position: relative;
+  margin-bottom: 0px;
+  margin: 20px;
+  height: 29rem;
+}
+.owl-carousel .box .image {
+  margin: 2rem;
+  text-align: center;
+  align-items: center;
+}
+.owl-carousel .box .image img {
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+.owl-carousel .owl-stage .owl-item.active.center .box .test-component {
+  background-color: #fff;
+  padding: 2.5rem;
+  box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.08);
+  min-height: 20px;
+  border-radius: 0.8rem;
+}
+.owl-carousel .box .test-component p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #222222;
+  line-height: 140%;
+}
+.owl-carousel .box .test-title {
+  font-family: "Open Sans", sans-serif;
+  color: #f96d02;
+  text-align: center;
+  margin-top: 1.3rem;
+  margin-bottom: 15px;
+}
+.owl-carousel .box .test-content {
+  text-align: left;
+}
+.owl-carousel .owl-stage {
+  opacity: 1;
+  transition: opacity 0.3s;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.owl-carousel .owl-stage p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.owl-carousel .owl-stage .owl-item.active p {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+.owl-carousel .owl-stage .owl-item.active.center p {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.owl-stage {
+  height: max-content;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.owl-nav {
+  float: right;
+  font-size: 2.5rem;
+  color: #343f52;
+}
+
+.testimonial__image {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__Content {
+  flex-grow: 1;
+}
+
+.testimonial__Content span {
+  color: #4f5665;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.owl-dot {
+  background: transparent;
+  border: none;
+}
+
+.owl-nav button {
+  background: transparent !important;
+  border: none;
+  color: #222222 !important;
+  font-size: 3rem !important;
+  margin: 1rem;
+}
+.navbar-toggler {
+  background-color: #f4f4f4;
+}
+
+/* Media queries for responsive */
+
+.mainSection__Search form select:focus-visible {
+  outline: none;
+}
+
+@media (max-width: 1080px) {
+  .bridalData .bridalData__head .arrowImage {
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    height: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer__image img {
+    height: 18.5rem;
+  }
+  .carouselDivContent {
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+  .btnBegin,
+  .btnBegin:hover {
+    padding: 0.3rem 3.3rem;
+  }
+  .bridalData__head h2 {
+    font-size: 4rem;
+  }
+  .bridalData__head p {
+    font-size: 1.4rem;
+  }
+  .premium-offer .btnDownload1 {
+    padding: 1rem 3.4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .bridalData .bridalData__head .arrowImage {
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+    height: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .btnBegin {
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .premium-offer .btnDownload1,
+  .homepage__header .btnDownload,
+  .btn-submit,
+  .btnAppDownload {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  .mainSection__heading {
+    font-size: 3.2rem;
+  }
+  .mainSection__para {
+    font-size: 1.6rem;
+  }
+  .mainSection {
+    padding-bottom: 11rem;
+  }
+  .mainSection__Search {
+    padding: 1.4rem;
+    top: -10rem;
+  }
+  .mainSection__Search form select {
+    padding: 5px;
+    text-align: left;
+  }
+  .mainSection__Search form select {
+    font-size: 1.4rem;
+  }
+
+  .bridalData .bridalData__head {
+    padding-top: 1.8rem;
+  }
+  .bridalData__head h2,
+  .register-sec .register-form .register-head {
+    font-size: 2.2rem;
+  }
+  .bridalData__head p {
+    font-size: 1.6rem;
+  }
+  .responsiveHeading {
+    width: 37rem;
+  }
+  .footer__copyright {
+    padding-bottom: 17rem !important;
+  }
+  .register-sec .register-form {
+    margin-left: 0;
+  }
+  .premium-offer .padding-inner {
+    padding: 1.5rem;
+  }
+  .social-icons {
+    float: left;
+  }
+  .mainSection__goTo img {
+    height: 45px;
+  }
+  .soulmate-sec .padding-outer {
+    padding: 1rem;
+  }
+
+  .footer__moreDetails {
+    padding: 3rem 0;
+  }
+  .carouselDivContent {
+    padding: 1rem 0;
+    text-align: center;
+  }
+  .owl-carousel .box .test-component p {
+    font-size: 1.6rem;
+  }
+  .moreDetails__head {
+    font-size: 1.8rem;
+    padding-top: 0.5rem;
+  }
+  .footer__list li a {
+    font-size: 1.4rem;
+  }
+  .footer__list li a,
+  .footer__support h5,
+  .footer__address {
+    font-size: 1.4rem;
+  }
+  .footer__list li {
+    padding: 0.2rem 0;
+  }
+  .register-sec .register-form .form-control {
+    height: 40px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .bridalData .bridalData__head .arrowImage {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    height: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .formSearch {
+    flex-direction: column;
+  }
+  .formSearch div {
+    width: 100%;
+    margin-left: 0;
+  }
+  .bridalData .bridalData__head .arrowImage {
+    display: none;
+  }
+  .bridalData .bridalData__head {
+    padding-top: 18rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .responsiveHeading {
+    font-size: 1.6rem;
+    width: 23rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .carouselDivContent {
+    padding: 1rem 4rem;
+    text-align: left;
+  }
+}
